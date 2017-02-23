@@ -69,8 +69,7 @@ def index():
         rows = make_query(cursor, query)
         queries = [{"query": query, "results": rows}]
         
-        cleaned_data = myjupyterstuff(rows)
-        
+              
         
         # this query lets us collect information about 
         # locations that are visited so we can bin them. 
@@ -147,13 +146,6 @@ def make_query(cursor, query):
         # finally, return an empty list of rows 
         return []
         
-def myjupyterthingie(rows):
-    cleanrows = {}
-    # looop throough rows
-    # clean them up
-    
-    return cleanrows
-
 # helper function to make a query and print lots of 
 # information about it. 
 def make_and_print_query(cursor, query, description):
