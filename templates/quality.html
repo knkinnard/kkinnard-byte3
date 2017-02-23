@@ -52,21 +52,25 @@
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>The data appears to be relatively complete. The study was never interrupted and none of the data appears to have been deleted.</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>Locations: The dates and times are slightly off. This is likely due to issues converting from UNIX 
+	time to a human readable timestamp. This does manifest itself in the visualizations. Changes in the timestamp will alter on 
+	which day certain activities took place. 
+	<br>
+	Screen: The screen data is less coherent. Distinguishing between the different types of phone usage is not straight forward.
+</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>Due to the timestamp issue, the location data may not be correct. 
+	Additionally, the screen data appears to have anomalies as well. For example, the phone being simultaneously 
+	locked and unlocked at the same time and date. This must be some collection error and is one of the reasons I 
+	chose not to evaluate the screen data here.</p>
       </div>
 
     </div> <!-- /container -->
